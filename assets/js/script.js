@@ -91,14 +91,25 @@ var specialCharacters = [
   // Function to prompt user for password options
  
     var password=document.getElementById("password");
+    function genpassword() {
+    var chars = "123456789%+\\/'!#$^?:,)(}{][~_-.abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
     var passwordLength = 9 ;
     var password ="";
-  
-  
 
-  
-    passwordText.value = password;
+   for (var i=0; i <= passwordLength; i++) {
+    var randomNumber = Math.floor(Math.random()*chars.Length);
+    password += Chars.substring(randomNumber, randomNumber +1);
+   }
+   //APPLY IT
+  document.getElementById("password").value = password;
   }
+  function copPassoword () {
+    var copyText = document.getElementById("passport");
+    copyText.Select();
+    copyText.setSelectionRange(1000);
+    document.execCommand("copy");
+  }
+
   
   // Add event listener to generate button
   generateBtn.addEventListener('click', writePassword);
