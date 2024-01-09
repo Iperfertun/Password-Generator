@@ -89,27 +89,13 @@ var specialCharacters = [
   ];
   
   // Function to prompt user for password options
-  function getPasswordOptions() {
+ 
+    var password=document.getElementById("password");
+    var passwordLength = 9 ;
+    var password ="";
   
-  }
   
-  // Function for getting a random element from an array
-  function getRandom(arr) {
-  
-  }
-  
-  // Function to generate password with user input
-  function generatePassword() {
-  
-  }
-  
-  // Get references to the #generate element
-  var generateBtn = document.querySelector('#generate');
-  
-  // Write password to the #password input
-  function writePassword() {
-    var password = generatePassword();
-    var passwordText = document.querySelector('#password');
+
   
     passwordText.value = password;
   }

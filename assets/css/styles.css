@@ -14,7 +14,7 @@ body,
 
 body {
   font-family: "Raleway", sans-serif;
-  background-color: #f9fbfd;
+  background-image: url(../images/Supply-chain-angriff-password-manager-6a2df79a.jpeg);
 }
 
 .wrapper {
@@ -40,6 +40,9 @@ header {
   margin: 0 auto;
   max-width: 800px;
   padding: 30px 40px;
+  box-shadow: inset 0 -3em 3em rgba(1, 68, 212, 0.904), 
+  0 0 0 2px white,
+  0.3em 0.3em 1em rgb(200 0 0 / 60%);
 }
 
 .card-header::after {
